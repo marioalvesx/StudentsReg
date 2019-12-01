@@ -1,0 +1,14 @@
+ul.student-list {
+  width: 100%;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+  margin-bottom: 30px;
+}
+
+ul.student-list li header {
+  width: 100%;
+  background-size: cover;
+  border-radius: 4px;
+}

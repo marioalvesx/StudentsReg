@@ -1,0 +1,24 @@
+{
+    // Sinal visual na esquerda da linha selecionada
+    "editor.renderLineHighlight": "gutter",
+
+    // Aumenta a fonte do terminal
+    "terminal.integrated.fontSize": 14,
+
+    "editor.tabSize": 2,
+    // Propriedade para ativar Emmet em Javascript
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx",
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+    },
+    
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#f4b96c",
+        "activityBar.activeBorder": "#0b9459",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#f1a33c"
+}
