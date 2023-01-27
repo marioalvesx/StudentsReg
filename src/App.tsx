@@ -1,15 +1,16 @@
 import { useState } from 'react'
+import Student from './components/Student'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <div> 
-        <input placeholder="Mathematics" />
+      <div className="add-student">
+        <input placeholder="Student Name" />
         <button>Add</button>
       </div>
+
+      <Student title="Student name" />
     </div>
   )
 }
