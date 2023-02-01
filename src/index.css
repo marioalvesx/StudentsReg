@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -15,6 +17,17 @@
   -webkit-text-size-adjust: 100%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -25,12 +38,23 @@ a:hover {
 }
 
 body {
+  background: #000 url('./assets/nightLibrary.jpg') no-repeat;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+body, input, button {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/* body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
+} */
 
 h1 {
   font-size: 3.2em;
@@ -48,6 +72,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
