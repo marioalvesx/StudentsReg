@@ -51,7 +51,7 @@ function App() {
       <br /><hr /><br />
       <div className="add-student">
         <input placeholder="Student Name" value={studentTodoInput} onChange={handleInputChange}/>
-        <button onClick={addStudentTodo}>Add</button>
+        <button className="add-button" onClick={addStudentTodo}>Add</button>
       </div>
       {
         studentsTodos.map((student) => (
