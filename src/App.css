@@ -15,6 +15,17 @@
   background-color: rgb(15 23 42 / 83%);
 }
 
+.date{
+  font-size: 22px;
+  width: 100%;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+}
+
+.date span{
+  font-weight: 400;
+}
+
 .add-student {
   margin-bottom: 2rem;
   display: flex;
@@ -28,12 +39,36 @@
   justify-content: space-between;
   border-radius: 8px;
   background-color: rgb(33 30 57 / 87%);
-  border-color: transparent;
+  border: 1px solid #646cff;
   color: #ffffff;
   padding: 1rem 2rem;
   margin-bottom: 1rem;
   flex-wrap: wrap;
   font-size: 1.3rem;
+}
+
+.data-card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.data-card {
+  border-radius: 30px;
+  box-shadow: 0 3px 15px rgb(15 23 42 / 83%);
+  background-color: #646cff;
+  flex-basis: 50%;
+  padding: 20px;
+  text-align: start;
+}
+
+.data-card h5 {
+  font-size: 18px;
+}
+
+.data-card:last-child{
+  text-align: right;
 }
 
 .add-button {
