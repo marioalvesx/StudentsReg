@@ -10,6 +10,7 @@ export type StudentTodo = {
 
 function App() {
   const [studentTodoInput, setTodoInput] = useState('');
+  const [completedTasks, setCompletedTasks] = useState('');  
   const [studentsTodos, setStudentsTodos] = useState<StudentTodo[]>(() => {
     const storedTodos = localStorage.getItem('@studentList:studentsTodos');
 
@@ -23,6 +24,12 @@ function App() {
   useEffect(() => {
     localStorage.setItem('@studentList:studentsTodos', JSON.stringify(studentsTodos))
   }, [studentsTodos])
+
+  useEffect(() => {
+    let completeArray = [];
+    studentsTodos.filter((todo) => todo.completed === true && completeArray.push(todo));
+    setCompletedTasks(completeArray.length.toString());
+  }, [studentsTodos]);
 
   let Today = new Date().toLocaleDateString('en-us', { weekday: 'long' });
   let day = new Date().toLocaleDateString('en-us', { day: 'numeric' });
@@ -56,17 +63,21 @@ function App() {
       <h4 className="date">
         🗓️ {`${Today},`}  <span>{`${day} ${month}`}</span>
       </h4>
-      <div className="add-student">        
-        <input placeholder="Student Name" value={studentTodoInput} onChange={handleInputChange}/>
+      <div className="add-student">
+        <input placeholder="Student task" value={studentTodoInput} onChange={handleInputChange}/>
         <button className="add-button" onClick={addStudentTodo}>Add</button>
       </div>
       <div className="data-card-container">
         <div className="data-card">
-          <h5>Result</h5>
+          <h5>
+            { studentsTodos.length < 10 ? `0${studentsTodos.length}` : studentsTodos.length }
+          </h5>
           <p>Created tasks</p>
         </div>
         <div className="data-card">
-          <h5>Result</h5>
+          <h5>
+            {completedTasks.length < 10 ? `0${completedTasks}` : completedTasks}
+          </h5>
           <p>Completed tasks</p>
         </div>
       </div>
