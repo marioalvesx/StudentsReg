@@ -63,10 +63,20 @@ function App() {
       <h4 className="date">
         🗓️ {`${Today},`}  <span>{`${day} ${month}`}</span>
       </h4>
-      <div className="add-student">
-        <input placeholder="Student task" value={studentTodoInput} onChange={handleInputChange}/>
-        <button className="add-button" onClick={addStudentTodo}>Add</button>
-      </div>
+      <form
+        className="flex flex-col stylesInputsField"
+        onSubmit={addStudentTodo}
+      >
+        <div className="add-student">
+          <input 
+            placeholder="Student task" 
+            value={studentTodoInput}  
+            required
+            onChange={handleInputChange}
+          />
+          <button className="add-button" type="submit" /*onClick={addStudentTodo}-*/>Add</button>
+        </div>
+      </form>
       <div className="data-card-container">
         <div className="data-card">
           <h5>
