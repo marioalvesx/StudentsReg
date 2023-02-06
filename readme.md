@@ -7,7 +7,13 @@ with React will be showed too. </p>
   <a href="#technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#how-to-execute">How to execute?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#inspirations">Inspirations</a>
+  <a href="#inspirations">Inspirations</a>&nbsp;&nbsp;&nbsp;
+</p>
+
+<p align="center">
+  <a href="https://api.netlify.com/api/v1/badges/a6bf8dce-818f-4cfb-ae45-894ba70164e3/deploy-status" target="_blank">
+    <img alt="Deploy" src="https://api.netlify.com/api/v1/badges/a6bf8dce-818f-4cfb-ae45-894ba70164e3/deploy-status" />
+  </a>
 </p>
 
 ![Frame 1](https://user-images.githubusercontent.com/22736436/217059080-350536c2-a4d0-45f2-8c06-ddf97deea7ef.png)
