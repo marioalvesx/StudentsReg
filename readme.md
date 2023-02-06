@@ -24,6 +24,7 @@ with React will be showed too. </p>
 - ⚡ **Vite**  - A build tool to facilitate development experience using React and for other modern web projects.
 
 ## Project
+**You can access the project here**: https://studentapptask.netlify.app/<br/>
 The Student Register app is an application that makes the register of students. We can register students, delete, update and manage the students status in the list (completed or not).
 This project was made to learn and improve the knowledge of the basics concepts in React like the manipulation of State, the props and component.
 
