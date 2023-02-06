@@ -4,7 +4,7 @@ of state, components and properties. The use and benefit of TypeScript and Vite
 with React will be showed too. </p>
 
 <p align="center">
-  <a href="$technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#how-to-execute">How to execute?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#inspirations">Inspirations</a>
