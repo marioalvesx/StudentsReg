@@ -3,10 +3,7 @@
 of state, components and properties. The use and benefit of TypeScript and Vite 
 with React will be showed too. </p>
 
-<hr />
-
 ![Frame 1](https://user-images.githubusercontent.com/22736436/217059080-350536c2-a4d0-45f2-8c06-ddf97deea7ef.png)
-
 
 <p align="center">
   <a href="$technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
