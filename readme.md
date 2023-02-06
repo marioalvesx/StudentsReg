@@ -5,6 +5,9 @@ with React will be showed too. </p>
 
 <hr />
 
+![Frame 1](https://user-images.githubusercontent.com/22736436/217059080-350536c2-a4d0-45f2-8c06-ddf97deea7ef.png)
+
+
 <p align="center">
   <a href="$technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -30,8 +33,7 @@ You can access the project here: link
 - Access the link available in your localhost.
 
 ## Inspirations
-- Coders Club class:
-- 
+- [Coders Club class](https://www.youtube.com/watch?v=m0nmYTAFf9Y&t) and [project](https://github.com/coders-club-codes/your-first-react-project).
 
 --- 
 
