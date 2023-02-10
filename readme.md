@@ -19,8 +19,6 @@ with React will be showed too. </p>
   </a>
 </p>
 
-![Frame 1](https://user-images.githubusercontent.com/22736436/217059080-350536c2-a4d0-45f2-8c06-ddf97deea7ef.png)
-
 ## Technologies
 - <img src="https://i.ibb.co/4RHMmLQ/react.png" width="20"/> <b>React Js</b> - JavaScript library for building user interfaces.
 - <img src="https://i.ibb.co/PZ2XZgr/ts.png" width="20"/> <b>TypeScript</b> - JavaScript superset to help in React apps.
