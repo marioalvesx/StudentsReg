@@ -1,5 +1,6 @@
 import Student from './components/Student/index'
 import './App.css'
+import ModalStudent from "./components/Utilities/ModalStudent"
 import { ChangeEvent, useEffect, useState } from 'react'
 
 export type StudentTodo = {
@@ -11,13 +12,13 @@ export type StudentTodo = {
 function App() {
   const [studentTodoInput, setTodoInput] = useState('');
   const [completedTasks, setCompletedTasks] = useState('');  
+  const [openModal, setOpenModal] = useState(false);
   const [studentsTodos, setStudentsTodos] = useState<StudentTodo[]>(() => {
     const storedTodos = localStorage.getItem('@studentList:studentsTodos');
 
     if (storedTodos) {
       return JSON.parse(storedTodos);
     }
-
     return [];
   });
 
@@ -62,21 +63,18 @@ function App() {
       <br /><hr /><br />
       <h4 className="date">
         🗓️ {`${Today},`}  <span>{`${day} ${month}`}</span>
-      </h4>
-      <form
-        className="flex flex-col stylesInputsField"
-        onSubmit={addStudentTodo}
-      >
-        <div className="add-student">
-          <input 
+      </h4>      
+        <div className="add-student-btn">
+          {/* <input 
             placeholder="Student task" 
             value={studentTodoInput}  
             required
             onChange={handleInputChange}
-          />
-          <button className="add-button" type="submit" /*onClick={addStudentTodo}-*/>Add</button>
+          /> */}
+          <button className="add-button" onClick={() => {setOpenModal(true)}} type="submit">Add</button>
+          { openModal && <ModalStudent closeModal={setOpenModal} />}
+
         </div>
-      </form>
       <div className="data-card-container">
         <div className="data-card">
           <h5>
