@@ -32,12 +32,13 @@ html, body{
   font-weight: 400;
 }
 
-.add-student {
+.add-student-btn {
   margin-bottom: 2rem;
   display: flex;
   width: 100%;
 }
 
+/*
 .add-student input {
   width: 100%;
   display: flex;
@@ -51,7 +52,7 @@ html, body{
   margin-bottom: 1rem;
   flex-wrap: wrap;
   font-size: 1.3rem;
-}
+} */
 
 .data-card-container {
   display: flex;

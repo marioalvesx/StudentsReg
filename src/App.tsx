@@ -1,7 +1,7 @@
 import Student from './components/Student/index'
-import './App.css'
 import ModalStudent from "./components/Utilities/ModalStudent"
 import { ChangeEvent, useEffect, useState } from 'react'
+import './App.css'
 
 export type StudentTodo = {
   id: number;
@@ -10,7 +10,7 @@ export type StudentTodo = {
 }
 
 function App() {
-  const [studentTodoInput, setTodoInput] = useState('');
+  // const [studentTodoInput, setTodoInput] = useState('');
   const [completedTasks, setCompletedTasks] = useState('');  
   const [openModal, setOpenModal] = useState(false);
   const [studentsTodos, setStudentsTodos] = useState<StudentTodo[]>(() => {
@@ -23,10 +23,6 @@ function App() {
   });
 
   useEffect(() => {
-    localStorage.setItem('@studentList:studentsTodos', JSON.stringify(studentsTodos))
-  }, [studentsTodos])
-
-  useEffect(() => {
     let completeArray = [];
     studentsTodos.filter((todo) => todo.completed === true && completeArray.push(todo));
     setCompletedTasks(completeArray.length.toString());
@@ -36,12 +32,12 @@ function App() {
   let day = new Date().toLocaleDateString('en-us', { day: 'numeric' });
   let month = new Date().toLocaleDateString('en-us', { month: 'short' });
 
-  function addStudentTodo() {
-    setStudentsTodos((previousTodos) => 
-      [...previousTodos, { id: Math.random(), title: studentTodoInput, completed: false }]
-    );
-    setTodoInput('');
-  }
+  // function addStudentTodo() {
+  //   setStudentsTodos((previousTodos) => 
+  //     [...previousTodos, { id: Math.random(), title: studentTodoInput, completed: false }]
+  //   );
+  //   setTodoInput('');
+  // }
 
   function completeTodo(id: number) {
     setStudentsTodos((previousTodos) => 
@@ -49,9 +45,9 @@ function App() {
     );
   }
 
-  function handleInputChange(e: ChangeEvent<HTMLInputElement>) {
-    setTodoInput(e.target.value);
-  }
+  // function handleInputChange(e: ChangeEvent<HTMLInputElement>) {
+  //   setTodoInput(e.target.value);
+  // }
 
   function deleteTodo(id: number) {
     setStudentsTodos((previousTodos) => previousTodos.filter((studentsTodos) => studentsTodos.id !== id));
